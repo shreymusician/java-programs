@@ -5,14 +5,21 @@ int main()
 {
     for(int r=1; r<=5; r++)
     {
-        for(int i=5-r; i>=0; i--)
+        for(int i=5-r; i>0; i--)
         {
             cout << " ";
         }
 
-        for(int i=1; i<=r; i++)
+        cout << "*";
+
+        if(r > 1)
         {
-            cout << "* ";
+            for(int j=2*r-3; j>0; j--)
+            {
+                cout << " ";
+            }
+
+            cout << "*";
         }
 
         cout << endl;
