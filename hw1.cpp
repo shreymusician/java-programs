@@ -5,13 +5,16 @@ int main()
 {
     for(int r=1; r<=5; r++)
     {
-        cout << "* ";
-
-        for(int s=5-r; s>=0; s--)
+        for(int i=5-r; i>=0; i--)
         {
             cout << " ";
         }
 
-        cout << "*\n"
+        for(int i=1; i<=r; i++)
+        {
+            cout << "* ";
+        }
+
+        cout << endl;
     }
 }
