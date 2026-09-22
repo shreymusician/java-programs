@@ -3,14 +3,7 @@ using namespace std;
 
 int main()
 {
-    int n = 5;
+    int a[] = {1,2,3};
 
-    for(int i=0; i<n; i++)
-    {
-        for(int j=i; j%n != 4; j=j%n+1)
-        {
-            cout << j << " ";
-        }
-        cout << endl;
-    }
+    cout << a;
 }
