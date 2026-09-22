@@ -4,12 +4,13 @@ using namespace std;
 void print_subarr(int arr[], int n, int size)
 {
     for(int i=0; i<=n-size; i++)
-    {
+    {   
+        int sum = 0;
         for(int j=i; j<i+size; j++)
         {
-            cout << arr[j] << " ";
+            sum += arr[j];
         }
-        cout << endl;
+        cout << sum << endl;
     }
 }
 
@@ -23,10 +24,8 @@ int main()
 
     for(int i=0; i<n; i++)
         cin >> a[i];
-    
-    cout << endl;
 
-    for(int i=1; i<n; i++)
+    for(int i=2; i<n; i++)
     {
         print_subarr(a, n, i);
         //cout << endl;
