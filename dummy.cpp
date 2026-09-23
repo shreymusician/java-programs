@@ -4,10 +4,10 @@ using namespace std;
 
 int main()
 {
-    string s = "He";
+    string s = "He"; int i;
 
-    for(int i=0; s[i]!='\0'; i++)
-    {
-        cout << s[i];
-    }
+    for(i=0; s[i]!='\0'; i++);
+
+    cout << s[1];
+    cout << "\n" << s.length();
 }
