@@ -1,9 +1,13 @@
 #include<iostream>
+#include<cstring>
 using namespace std;
 
 int main()
 {
-    int a[] = {1,2,3};
+    string s = "He";
 
-    cout << a;
+    for(int i=0; s[i]!='\0'; i++)
+    {
+        cout << s[i];
+    }
 }
